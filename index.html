@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PROJECT MANAGEMENT DASHBOARD</h1>
+
+        <div class="projects">
+            <div class="form-section">
+                <h2>Create a Project</h2>
+                <input type="text" id="projectName" placeholder="Project Name">
+                <textarea id="projectDescription" placeholder="Project Description"></textarea>
+                <button onclick="createProject()">Create Project</button>
+            </div>
+            
+            <div class="projects-section">
+                <h2>All Projects</h2>
+                <ul id="projectList"></ul>
+            </div>
+            
+            <div class="view-project-section">
+                <h2>View Project</h2>
+                <input type="text" id="viewProjectId" placeholder="Project ID">
+                <button onclick="viewProject()">View Project</button>
+                <div id="projectDetails">
+                    <h3>Description</h3>
+                    <p id="projectDescriptionView"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
